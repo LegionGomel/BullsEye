@@ -103,6 +103,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="randomValueLabel" destination="JUE-kt-rjL" id="p2V-zv-6UK"/>
                         <outlet property="sliderValue" destination="VuB-20-s7i" id="403-cA-NsY"/>
                     </connections>
                 </viewController>

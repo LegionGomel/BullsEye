@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var sliderValue: UISlider!
+    @IBOutlet weak var randomValueLabel: UILabel!
+    
     var currentValue: Int = 0
     var targetValue: Int = 0
     
@@ -20,9 +22,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func hitButtonPressed(_ sender: Any) {
-        
-        let message = "Current slider value is: \(currentValue)" +
-        "\nThe target value is: \(targetValue)"
+        let difference = abs(targetValue - currentValue)
+        let points = 100 - difference
+        let message = "You've scored \(points) points"
         // Create popup alert controller
         let alert = UIAlertController(title: "Hello world!", message: message, preferredStyle: .alert)
         // Create popup alert action (a button inside)
@@ -35,15 +37,24 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderMoved(_ sender: UISlider) {
+        // Add slider Int value to variable
         let roundedValue = sliderValue.value.rounded()
         currentValue = Int(roundedValue)
         
     }
     
     func startNewRound() {
+        // Generate new target value and reset slider value
         targetValue = Int.random(in: 1...100)
         currentValue = 50
         sliderValue.value = Float(currentValue)
+        updateLabels()
     }
+    
+    func updateLabels() {
+        // Update text for labels
+        randomValueLabel.text = String(targetValue)
+    }
+
 }
 
