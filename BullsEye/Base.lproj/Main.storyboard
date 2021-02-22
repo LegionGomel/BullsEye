@@ -104,6 +104,8 @@
                     </view>
                     <connections>
                         <outlet property="randomValueLabel" destination="JUE-kt-rjL" id="p2V-zv-6UK"/>
+                        <outlet property="roundLabel" destination="Sse-tX-D2Z" id="Bs8-BE-9XN"/>
+                        <outlet property="scoreLabel" destination="hjM-Z4-rzI" id="1jo-cD-Xzb"/>
                         <outlet property="sliderValue" destination="VuB-20-s7i" id="403-cA-NsY"/>
                     </connections>
                 </viewController>
