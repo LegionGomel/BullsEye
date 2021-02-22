@@ -23,6 +23,20 @@ class ViewController: UIViewController {
         let roundedValue = sliderValue.value.rounded()
         currentValue = Int(roundedValue)
         startNewRound()
+        
+        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        sliderValue.setThumbImage(thumbImageNormal, for: .normal)
+        sliderValue.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
+        let trackLeftImageResizable = trackLeftImage.resizableImage(withCapInsets: insets)
+        let trackRightImageResizable = trackRightImage.resizableImage(withCapInsets: insets)
+        sliderValue.setMinimumTrackImage(trackLeftImageResizable, for: .normal)
+        sliderValue.setMaximumTrackImage(trackRightImageResizable, for: .normal)
+        
     }
 
     @IBAction func hitButtonPressed(_ sender: Any) {
@@ -66,6 +80,12 @@ class ViewController: UIViewController {
         let roundedValue = sliderValue.value.rounded()
         currentValue = Int(roundedValue)
         
+    }
+    
+    @IBAction func startOverButtonPressed(_ sender: UIButton) {
+        score = 0
+        round = 0
+        startNewRound()
     }
     
     func startNewRound() {
