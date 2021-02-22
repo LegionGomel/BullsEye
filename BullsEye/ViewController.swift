@@ -50,12 +50,15 @@ class ViewController: UIViewController {
         // Create popup alert controller
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         // Create popup alert action (a button inside)
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        // Also start new round when button inside alert is pressed
+        let action = UIAlertAction(title: "Awesome", style: .default, handler: {
+            action in
+            self.startNewRound()
+        })
         // Add button to popup
         alert.addAction(action)
         // Show popup alert when hitButtonPressed
         present(alert, animated: true, completion: nil)
-        startNewRound()
     }
     
     @IBAction func sliderMoved(_ sender: UISlider) {
