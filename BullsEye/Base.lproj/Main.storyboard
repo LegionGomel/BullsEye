@@ -146,7 +146,7 @@
                             <constraint firstItem="NY0-Rd-Vqa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Ek-01-Xrk"/>
                             <constraint firstItem="bFW-W1-l4w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OTx-FH-SgS"/>
                             <constraint firstItem="NY0-Rd-Vqa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X18-Wb-RsW"/>
-                            <constraint firstItem="bFW-W1-l4w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="baW-Lu-2tp"/>
+                            <constraint firstItem="bFW-W1-l4w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="baW-Lu-2tp"/>
                             <constraint firstAttribute="bottom" secondItem="bFW-W1-l4w" secondAttribute="bottom" id="dW8-8J-qTN"/>
                         </constraints>
                     </view>
@@ -169,7 +169,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="230-zM-PC8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="230-zM-PC8">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBZ-V8-V8O">
@@ -200,7 +200,7 @@
                         <viewLayoutGuide key="safeArea" id="7f8-da-Civ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="230-zM-PC8" firstAttribute="top" secondItem="7f8-da-Civ" secondAttribute="top" id="O3d-ni-hK4"/>
+                            <constraint firstItem="230-zM-PC8" firstAttribute="top" secondItem="yJa-Lu-L2W" secondAttribute="top" id="O3d-ni-hK4"/>
                             <constraint firstItem="SBZ-V8-V8O" firstAttribute="top" secondItem="Br1-rt-gOP" secondAttribute="bottom" constant="8" id="Q28-ul-neA"/>
                             <constraint firstItem="SBZ-V8-V8O" firstAttribute="centerX" secondItem="yJa-Lu-L2W" secondAttribute="centerX" id="Sox-3f-2z2"/>
                             <constraint firstAttribute="bottom" secondItem="230-zM-PC8" secondAttribute="bottom" id="UQa-TF-5gn"/>
