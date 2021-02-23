@@ -169,9 +169,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="230-zM-PC8">
-                                <rect key="frame" x="-13" y="0.0" width="691" height="380"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="230-zM-PC8">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBZ-V8-V8O">
                                 <rect key="frame" x="273.5" y="318" width="120" height="37"/>
@@ -201,10 +200,14 @@
                         <viewLayoutGuide key="safeArea" id="7f8-da-Civ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="230-zM-PC8" firstAttribute="top" secondItem="7f8-da-Civ" secondAttribute="top" id="O3d-ni-hK4"/>
                             <constraint firstItem="SBZ-V8-V8O" firstAttribute="top" secondItem="Br1-rt-gOP" secondAttribute="bottom" constant="8" id="Q28-ul-neA"/>
                             <constraint firstItem="SBZ-V8-V8O" firstAttribute="centerX" secondItem="yJa-Lu-L2W" secondAttribute="centerX" id="Sox-3f-2z2"/>
+                            <constraint firstAttribute="bottom" secondItem="230-zM-PC8" secondAttribute="bottom" id="UQa-TF-5gn"/>
                             <constraint firstItem="Br1-rt-gOP" firstAttribute="leading" secondItem="7f8-da-Civ" secondAttribute="leading" constant="20" id="UT7-Lj-PXU"/>
+                            <constraint firstItem="230-zM-PC8" firstAttribute="leading" secondItem="yJa-Lu-L2W" secondAttribute="leading" id="ZYi-Zm-L2p"/>
                             <constraint firstItem="Br1-rt-gOP" firstAttribute="top" secondItem="7f8-da-Civ" secondAttribute="top" constant="20" id="b9Y-uh-Da5"/>
+                            <constraint firstAttribute="trailing" secondItem="230-zM-PC8" secondAttribute="trailing" id="eVE-i1-K0S"/>
                             <constraint firstItem="7f8-da-Civ" firstAttribute="trailing" secondItem="Br1-rt-gOP" secondAttribute="trailing" constant="20" id="hs2-75-tcS"/>
                             <constraint firstItem="7f8-da-Civ" firstAttribute="bottom" secondItem="SBZ-V8-V8O" secondAttribute="bottom" constant="20" id="lWP-rx-LLJ"/>
                             <constraint firstItem="SBZ-V8-V8O" firstAttribute="centerX" secondItem="yJa-Lu-L2W" secondAttribute="centerX" id="oSe-gF-vI8"/>
